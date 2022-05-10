@@ -1,0 +1,6 @@
+2022-05-11 00:47:56.503  INFO 13876 --- [restartedMain] c.b.a.AddressbookAppApplication          : Starting AddressbookAppApplication using Java 17.0.2 on LAPTOP-NATQCI4K with PID 13876 (D:\CFP\SpringBoot\addressbookapp\target\classes started by Hp in D:\CFP\SpringBoot\addressbookapp)
+2022-05-11 00:47:56.511 DEBUG 13876 --- [restartedMain] c.b.a.AddressbookAppApplication          : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-11 00:47:56.513  INFO 13876 --- [restartedMain] c.b.a.AddressbookAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-11 00:48:00.646  WARN 13876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-11 00:48:01.103  INFO 13876 --- [restartedMain] c.b.a.AddressbookAppApplication          : Started AddressbookAppApplication in 5.189 seconds (JVM running for 5.806)
+2022-05-11 00:48:01.108  INFO 13876 --- [restartedMain] c.b.a.AddressbookAppApplication          : Addressbook App Started
