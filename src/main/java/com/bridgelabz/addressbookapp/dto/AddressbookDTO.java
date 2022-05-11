@@ -1,12 +1,12 @@
 package com.bridgelabz.addressbookapp.dto;
 
-import lombok.Data;
+import lombok.ToString;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
-@Data
-public class AddressbookDTO {
+
+public  @ToString class AddressbookDTO {
 
     @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Addressbook name is Invalid")
     @NotEmpty(message = "Addressbook name cannot be null")
@@ -15,16 +15,14 @@ public class AddressbookDTO {
     @Pattern(regexp = "^[91]+[ ]?[6-9]{1}[0-9]{9}$" ,message = "phonenumber is invalid")
     public String phoneNumber;
 
-    public AddressbookDTO(String name, String phoneNumber) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-    }
+    public String address;
 
-    @Override
-    public String toString() {
-        return "AddressbookDTO{" +
-                "name='" + name + '\'' +
-                ", phoneNumber=" + phoneNumber +
-                '}';
-    }
+    public String city;
+
+    public String state;
+
+    public String zip;
+
+    public String email;
+
 }
