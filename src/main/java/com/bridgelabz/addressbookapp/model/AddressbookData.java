@@ -2,9 +2,17 @@ package com.bridgelabz.addressbookapp.model;
 
 import com.bridgelabz.addressbookapp.dto.AddressbookDTO;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public  @Data class AddressbookData {
+import javax.persistence.*;
 
+@Entity
+@Table(name="contact_details")
+public  @Data @NoArgsConstructor class AddressbookData {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "person_Id")
     private int personId;
     private String name;
     private String phoneNumber;

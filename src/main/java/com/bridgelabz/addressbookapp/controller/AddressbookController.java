@@ -38,7 +38,7 @@ public class AddressbookController {
     @PostMapping("/create")
     public ResponseEntity<ResponseDTO> addAddressbookData(@Valid @RequestBody AddressbookDTO addressbookDTO) {
         AddressbookData addressbookData = null;
-        addressbookData = addressbookService.createAddressbooData(addressbookDTO);
+        addressbookData = addressbookService.createAddressbookData(addressbookDTO);
         ResponseDTO responseDTO = new ResponseDTO("Created Employee Payroll Data for: ",addressbookData);
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }

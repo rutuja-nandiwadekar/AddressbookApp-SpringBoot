@@ -10,7 +10,7 @@ public interface IAddressbookService {
 
     AddressbookData getAddressbookDataById(int personId);
 
-    AddressbookData createAddressbooData(AddressbookDTO addressbookDTO);
+    AddressbookData createAddressbookData(AddressbookDTO addressbookDTO);
 
     AddressbookData updateAddressbookData(int personId,AddressbookDTO addressbookDTO);
 
