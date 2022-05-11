@@ -14,15 +14,18 @@ public  @Data class AddressbookData {
     private String zip;
     private String email;
 
-
     public AddressbookData(int personId, AddressbookDTO addressbookDTO) {
         this.personId = personId;
+        this.updateAddressBookdata(addressbookDTO);
+
+    }
+    public void updateAddressBookdata(AddressbookDTO addressbookDTO) {
         this.name = addressbookDTO.name;
-        this.phoneNumber = addressbookDTO.phoneNumber;
         this.address = addressbookDTO.address;
         this.city = addressbookDTO.city;
         this.state = addressbookDTO.state;
         this.zip = addressbookDTO.zip;
+        this.phoneNumber = addressbookDTO.phoneNumber;
         this.email = addressbookDTO.email;
     }
 }
