@@ -22,11 +22,12 @@ public  @Data @NoArgsConstructor class AddressbookData {
     private String zip;
     private String email;
 
-    public AddressbookData(int personId, AddressbookDTO addressbookDTO) {
-        this.personId = personId;
+    public AddressbookData(AddressbookDTO addressbookDTO) {
+
         this.updateAddressBookdata(addressbookDTO);
 
     }
+
     public void updateAddressBookdata(AddressbookDTO addressbookDTO) {
         this.name = addressbookDTO.name;
         this.address = addressbookDTO.address;
