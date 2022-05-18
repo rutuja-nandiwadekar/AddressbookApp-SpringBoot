@@ -14,6 +14,7 @@ public  @Data @NoArgsConstructor class AddressbookData {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "person_Id")
     private int personId;
+
     private String name;
     private String phoneNumber;
     private String address;

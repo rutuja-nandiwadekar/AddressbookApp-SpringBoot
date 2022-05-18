@@ -6,6 +6,7 @@ import com.bridgelabz.addressbookapp.model.AddressbookData;
 import java.util.List;
 
 public interface IAddressbookService {
+
     List<AddressbookData> getAddressbookData();
 
     AddressbookData getAddressbookDataById(int personId);
@@ -16,4 +17,11 @@ public interface IAddressbookService {
 
     void deleteAddressbookData(int personId);
 
+    List<AddressbookData> getAddressbookByCity(String city);
+
+    List<AddressbookData> getAddressBookByState(String state);
+
+    List<AddressbookData> getAddressBookByZip(String zip);
+
+    List<AddressbookData> getAddressBookByName(String name);
 }
