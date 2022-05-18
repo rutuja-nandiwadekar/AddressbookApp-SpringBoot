@@ -89,4 +89,36 @@ public class AddressbookController {
         return new ResponseEntity<>(responseDTO,HttpStatus.OK);
     }
 
+    @GetMapping("/sort_by_city")
+    public ResponseEntity<ResponseDTO> sortAddressBookByCity(){
+        List<AddressbookData> addressbookDataList = null;
+        addressbookDataList = addressbookService.sortAddressBookByCity();
+        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By City ",addressbookDataList);
+        return new ResponseEntity<>(responseDTO,HttpStatus.OK);
+    }
+
+    @GetMapping("/sort_by_state")
+    public ResponseEntity<ResponseDTO> sortAddressBookByState(){
+        List<AddressbookData> addressbookDataList = null;
+        addressbookDataList = addressbookService.sortAddressBookByState();
+        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By State ",addressbookDataList);
+        return new ResponseEntity<>(responseDTO,HttpStatus.OK);
+    }
+
+    @GetMapping("/sort_by_zip")
+    public ResponseEntity<ResponseDTO> sortAddressBookByZip(){
+        List<AddressbookData> addressbookDataList = null;
+        addressbookDataList = addressbookService.sortAddressBookByZip();
+        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By Zip ",addressbookDataList);
+        return new ResponseEntity<>(responseDTO,HttpStatus.OK);
+    }
+
+    @GetMapping("/sort_by_name")
+    public ResponseEntity<ResponseDTO> sortAddressBookByName(){
+        List<AddressbookData> addressbookDataList = null;
+        addressbookDataList = addressbookService.sortAddressBookByName();
+        ResponseDTO responseDTO = new ResponseDTO("sort AddressBook By Name ",addressbookDataList);
+        return new ResponseEntity<>(responseDTO,HttpStatus.OK);
+    }
+
 }

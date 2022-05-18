@@ -104,5 +104,37 @@ public class AddressbookService implements IAddressbookService {
     public List<AddressbookData> getAddressBookByName(String name) {
         return addressbookRepository.getByName(name);
     }
-    
+
+    /*
+     * @Purpose : This method is used to sort Addressbook data by city
+     */
+    @Override
+    public List<AddressbookData> sortAddressBookByCity() {
+        return addressbookRepository.sortByCity();
+    }
+
+    /*
+     * @Purpose : This method is used to sort Addressbook data by state
+     */
+    @Override
+    public List<AddressbookData> sortAddressBookByState() {
+        return addressbookRepository.sortByState();
+    }
+
+    /*
+     * @Purpose : This method is used to sort Addressbook data by zip
+     */
+    @Override
+    public List<AddressbookData> sortAddressBookByZip() {
+        return addressbookRepository.sortByZip();
+    }
+
+    /*
+     * @Purpose : This method is used to sort Addressbook data by name
+     */
+    @Override
+    public List<AddressbookData> sortAddressBookByName() {
+        return addressbookRepository.sortByName();
+    }
+
 }

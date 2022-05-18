@@ -24,4 +24,12 @@ public interface IAddressbookService {
     List<AddressbookData> getAddressBookByZip(String zip);
 
     List<AddressbookData> getAddressBookByName(String name);
+
+    List<AddressbookData> sortAddressBookByCity();
+
+    List<AddressbookData> sortAddressBookByState();
+
+    List<AddressbookData> sortAddressBookByZip();
+
+    List<AddressbookData> sortAddressBookByName();
 }
